@@ -11,8 +11,18 @@
     qutebrowser
   ];
 
-  programs.fish.enable = true;
-  programs.neovim.enable = true;
+  programs.fish = {
+    enable = true;
+    init = ''
+      if status is-login
+        if test -z "$DISPLAY" -a -z "$WAYLAND_DISPLAY"
+          exec sway
+        end
+      end
+    '';
+  };
+  
+  programs.neovim.enable = true;
 
   programs.swayfx = {
     services.run.sway.enable = true;
