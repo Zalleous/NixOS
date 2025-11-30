@@ -14,7 +14,7 @@
   programs.fish.enable = true;
   programs.neovim.enable = true;
 
-  programs.sway = {
+  programs.swayfx = {
     services.run.sway.enable = true;
     enable = true;
     config = {
@@ -27,5 +27,5 @@
     };
   };
   
-  home.stateVersion = "25.11";
+  home.stateVersion = "24.05";
 }
