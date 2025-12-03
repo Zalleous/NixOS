@@ -1,0 +1,9 @@
+==== Create / Modify project ====
+1) nix-shell
+2) docker-compose up -d --build
+3) # Go to localhost:8080
+
+==== Delete / Finish project ====
+1) docker stop apache-php-backend
+2) docker rm apache-php-backend
+3) exit

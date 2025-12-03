@@ -1,0 +1,11 @@
+services:
+  web:
+    build:
+      context: .
+    image: apache-php
+    container_name: apache-php-backend
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src/:/var/www/html
+    restart: unless-stopped
