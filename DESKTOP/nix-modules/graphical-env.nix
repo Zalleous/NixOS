@@ -28,6 +28,6 @@
   # Tokyo Night color configuration for Ly
   # Sets TTY colors before Ly starts
   systemd.services.display-manager.serviceConfig.ExecStartPre = [
-    "${pkgs.coreutils}/bin/printf '\\e]P01a1b26\\e]P7c0caf5\\e]P1f7768e\\e]P29ece6a\\e]P3e0af68\\e]P47aa2f7\\e]P5bb9af7\\e]P67dcfff\\ec'"
+    "${pkgs.coreutils}/bin/printf '\\e]P01a1b26\\e]P7c0caf5\\e]P1f7768e\\e]P29ece6a\\e]P3e0af68\\e]P47aa2f7\\e]P5bb9af7\\e]P67dcfff'"
   ];
 }
