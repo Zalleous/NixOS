@@ -45,7 +45,6 @@ bindsym $mod+t exec kitty --single-instance
 bindsym $mod+Return exec kitty --single-instance
 bindsym $mod+w exec firefox
 bindsym $mod+n exec kitty --single-instance -e nvim
-bindsym $mod+v exec kitty --single-instance -e nvim
 
 # Navigation vim-style
 bindsym $mod+h focus left
