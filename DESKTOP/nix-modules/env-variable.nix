@@ -18,6 +18,6 @@ in
   environment.etc."xdg/waybar/config.jsonc".source = "${themePath}/waybar/config.jsonc";
   environment.etc."xdg/waybar/style.css".source = "${themePath}/waybar/style.css";
 
-  # Non-themed configuration files
-  environment.etc."xdg/fish/config.fish".source = ../app-configs/fish/config.fish;
+  # Fish configuration (theme-aware)
+  environment.etc."xdg/fish/config.fish".source = "${themePath}/fish/config.fish";
 }
