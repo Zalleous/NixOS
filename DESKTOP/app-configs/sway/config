@@ -2,9 +2,6 @@ exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DE
 
 exec waybar
 
-# Delete fish welcome message
-exec set -U fish_greeting ""
-
 # Gruvbox Dark colors
 set $bg     #282828
 set $fg     #ebdbb2
@@ -44,10 +41,10 @@ set $ws3 3
 set $ws4 4
 
 # Apps
-bindsym $mod+t exec foot
-bindsym $mod+Return exec foot
+bindsym $mod+t exec kitty 
+bindsym $mod+Return exec kitty 
 bindsym $mod+w exec qutebrowser
-bindsym $mod+n exec foot -e nvim 
+bindsym $mod+n exec kitty -e nvim 
 
 # Navigation vim-style
 bindsym $mod+h focus left

@@ -2,25 +2,36 @@
 
 {
   environment.systemPackages = with pkgs; [
+    # --- Terimnal ---
+    kitty
+
     # --- Development Tools ---
     gcc       
     git
     gnumake  
     nodejs  
-    
-    # --- LazyVim Requirements ---
-    ripgrep 
-    fd     
-    fzf   
-    tree-sitter 
+    python3
     curl       
     unzip     
     wl-clipboard 
-
-    # --- Terminal & Shell ---
-    foot        
+    php 
     fastfetch  
-    
+
+    # --- LazyVim Requirements ---
+    lazygit
+    ripgrep 
+    trash-cli
+    fd     
+    fzf   
+    tree-sitter 
+    lua-language-server 
+    nixd 
+    sqlite
+    imagemagick
+    ghostscript
+    mermaid-cli
+    tectonic
+
     # --- Graphical Apps ---
     firefox     
     qutebrowser 

@@ -17,6 +17,7 @@
     ./nix-modules/fonts.nix
     ./nix-modules/env-variable.nix
     ./nix-modules/lazyvim.nix
+    ./nix-modules/time.nix
   ];
 
   ########## NIXOS VERSION ##########
