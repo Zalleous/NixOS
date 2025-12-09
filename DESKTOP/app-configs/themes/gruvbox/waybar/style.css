@@ -1,0 +1,119 @@
+* {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 13px;
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+}
+
+window#waybar {
+  background: #282828;
+  color: #ebdbb2;
+  border-bottom: none;
+}
+
+/* Workspaces */
+#workspaces button {
+  padding: 0 8px;
+  color: #928374;
+  background: transparent;
+}
+
+#workspaces button.focused {
+  color: #282828;
+  background: #d79921;
+  font-weight: bold;
+}
+
+#workspaces button.urgent {
+  color: #282828;
+  background: #cc241d;
+  font-weight: bold;
+}
+
+/* Mode Sway */
+#mode {
+  padding: 0 10px;
+  color: #282828;
+  background: #fabd2f;
+  font-weight: bold;
+}
+
+/* Fenêtre active */
+#window {
+  color: #ebdbb2;
+  font-weight: 500;
+}
+
+/* Horloge */
+#clock {
+  padding: 0 12px;
+  color: #282828;
+  background: #d79921;
+  font-weight: bold;
+}
+
+/* PulseAudio */
+#pulseaudio {
+  padding: 0 10px;
+  color: #282828;
+  background: #b16286;
+  font-weight: bold;
+}
+
+#pulseaudio.muted {
+  color: #282828;
+  background: #cc241d;
+}
+
+/* Network */
+#network {
+  padding: 0 10px;
+  color: #282828;
+  background: #689d6a;
+  font-weight: bold;
+}
+
+#network.disconnected {
+  color: #282828;
+  background: #cc241d;
+}
+
+/* CPU */
+#cpu {
+  padding: 0 10px;
+  color: #282828;
+  background: #fabd2f;
+  font-weight: bold;
+}
+
+/* Memory */
+#memory {
+  padding: 0 10px;
+  color: #282828;
+  background: #d65d0e;
+  font-weight: bold;
+}
+
+/* Battery */
+#battery {
+  padding: 0 10px;
+  color: #282828;
+  background: #98971a;
+  font-weight: bold;
+}
+
+#battery.charging {
+  color: #282828;
+  background: #98971a;
+}
+
+#battery.warning:not(.charging) {
+  color: #282828;
+  background: #fabd2f;
+}
+
+#battery.critical:not(.charging) {
+  color: #282828;
+  background: #cc241d;
+}
