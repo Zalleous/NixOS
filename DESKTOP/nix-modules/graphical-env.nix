@@ -22,19 +22,12 @@
       clock = "%c";
       hide_borders = false;
       vi_mode = false;
-
-      # Tokyo Night color indices
-      fg = 7;  # Foreground
-      bg = 0;  # Background
-
-      # Reset command to set Tokyo Night TTY colors
-      term_reset_cmd = "${pkgs.ncurses}/bin/tput reset; ${pkgs.coreutils}/bin/printf '%%b' '\\e]P01a1b26\\e]P7c0caf5\\e]P1f7768e\\e]P29ece6a\\e]P3e0af68\\e]P47aa2f7\\e]P5bb9af7\\e]P67dcfff\\e]P8414868\\ec'";
     };
   };
 
   # Tokyo Night color configuration for Ly
   # Sets TTY colors before Ly starts
   systemd.services.display-manager.serviceConfig.ExecStartPre = [
-    "${pkgs.coreutils}/bin/printf '%%b' '\\e]P01a1b26\\e]P7c0caf5\\e]P1f7768e\\e]P29ece6a\\e]P3e0af68\\e]P47aa2f7\\e]P5bb9af7\\e]P67dcfff\\e]P8414868\\ec'"
+    "${pkgs.coreutils}/bin/printf '\\e]P01a1b26\\e]P7c0caf5\\e]P1f7768e\\e]P29ece6a\\e]P3e0af68\\e]P47aa2f7\\e]P5bb9af7\\e]P67dcfff\\ec'"
   ];
 }
