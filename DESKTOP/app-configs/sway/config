@@ -45,6 +45,8 @@ bindsym $mod+t exec kitty --single-instance
 bindsym $mod+Return exec kitty --single-instance
 bindsym $mod+w exec firefox
 bindsym $mod+n exec kitty --single-instance -e nvim
+bindsym $mod+d exec wofi --show drun
+bindsym $mod+s exec grim -g "$(slurp)" ~/Pictures/screenshot-$(date +%Y%m%d-%H%M%S).png
 
 # Navigation vim-style
 bindsym $mod+h focus left
