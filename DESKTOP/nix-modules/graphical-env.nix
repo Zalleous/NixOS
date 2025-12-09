@@ -18,8 +18,21 @@
     enable = true;
     settings = {
       default_session = {
-        command = "${pkgs.tuigreet}/bin/tuigreet --time --cmd sway";
+        command = "${pkgs.greetd.regreet}/bin/regreet";
         user = "greeter";
+      };
+    };
+  };
+
+  programs.regreet = {
+    enable = true;
+    settings = {
+      background = {
+        path = "/etc/nixos/wallpaper.jpg";
+        fit = "Cover";
+      };
+      GTK = {
+        application_prefer_dark_theme = true;
       };
     };
   };
