@@ -43,7 +43,8 @@ set $ws4 4
 # Apps
 bindsym $mod+t exec kitty --single-instance
 bindsym $mod+Return exec kitty --single-instance
-bindsym $mod+w exec firefox
+bindsym $mod+w exec qutebrowser
+bindsym $mod+f exec firefox
 bindsym $mod+n exec kitty --single-instance -e nvim
 bindsym $mod+d exec wofi --show drun
 bindsym $mod+s exec grim -g "$(slurp)" ~/Pictures/screenshot-$(date +%Y%m%d-%H%M%S).png
@@ -72,7 +73,6 @@ bindsym $mod+Shift+3 move container to workspace $ws3
 bindsym $mod+Shift+4 move container to workspace $ws4
 
 # Window management
-bindsym $mod+f fullscreen toggle
+bindsym $mod+Shift+f fullscreen toggle
 bindsym $mod+q kill
-bindsym $mod+r reload 
-
+bindsym $mod+r reload

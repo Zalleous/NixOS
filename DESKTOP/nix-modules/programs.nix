@@ -31,13 +31,19 @@
     ghostscript
     mermaid-cli
     tectonic
+    vtsls
+    vue-language-server
+    nil
+    nixfmt-rfc-style
 
     # --- Graphical Apps ---
     firefox     
     qutebrowser 
 
     # -- Windows Components --
+    waybar
     swaybg
+    wofi
   ];
 
 

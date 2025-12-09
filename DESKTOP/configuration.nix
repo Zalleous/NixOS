@@ -18,7 +18,18 @@
     ./nix-modules/env-variable.nix
     ./nix-modules/lazyvim.nix
     ./nix-modules/time.nix
+    ./nix-modules/fish.nix
+    ./nix-modules/wofi.nix
   ];
+
+  ########## AUTO CLEAN #############
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 5d";
+  };
+  
+  nix.settings.auto-optimise-store = true;
 
   ########## NIXOS VERSION ##########
   system.stateVersion = "25.11"; 
