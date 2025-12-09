@@ -25,6 +25,21 @@
     };
   };
 
+  # Set default session to Sway
+  services.displayManager.defaultSession = "sway";
+
+  # Ensure Wayland environment variables are set for user services
+  systemd.user.services = {
+    wayland-session-env = {
+      description = "Set Wayland environment variables";
+      wantedBy = [ "default.target" ];
+      serviceConfig = {
+        Type = "oneshot";
+        ExecStart = "${pkgs.systemd}/bin/systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP";
+      };
+    };
+  };
+
   # Tokyo Night color configuration for Ly
   # Sets TTY colors before Ly starts
   systemd.services.display-manager.serviceConfig.ExecStartPre = [
