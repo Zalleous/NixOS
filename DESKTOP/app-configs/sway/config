@@ -41,10 +41,10 @@ set $ws3 3
 set $ws4 4
 
 # Apps
-bindsym $mod+t exec kitty 
-bindsym $mod+Return exec kitty 
+bindsym $mod+t exec kitty --single-instance 
+bindsym $mod+Return exec kitty --single-instance 
 bindsym $mod+w exec qutebrowser
-bindsym $mod+n exec kitty -e nvim 
+bindsym $mod+n exec kitty --single-instance -e nvim
 
 # Navigation vim-style
 bindsym $mod+h focus left
