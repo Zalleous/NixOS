@@ -1,0 +1,24 @@
+# Nix build results
+result
+result-*
+
+# Hardware configuration (machine-specific)
+DESKTOP/hardware-configuration.nix
+
+# Direnv
+.direnv/
+.envrc
+
+# Editor files
+*.swp
+*.swo
+*~
+.*.swp
+.*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backup files from activation scripts
+*.backup.*

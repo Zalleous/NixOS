@@ -8,9 +8,11 @@
       echo -e "\033[93m ### INIT FISH CONFIG FOR ${user} ### \033[0m"
       
       mkdir -p /home/${user}/.config
-      
+
       if [ -d "$TARGET" ]; then
-        rm -R "$TARGET"
+        BACKUP="$TARGET.backup.$(date +%s)"
+        mv "$TARGET" "$BACKUP"
+        echo -e "\033[90mBacked up existing config to $BACKUP\033[0m"
       fi
 
       cp -rL "$SOURCE" "$TARGET"

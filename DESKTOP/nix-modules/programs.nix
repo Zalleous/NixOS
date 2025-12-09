@@ -2,7 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
-    # --- Terimnal ---
+    # --- Terminal ---
     kitty
 
     # --- Development Tools ---
@@ -44,6 +44,8 @@
     waybar
     swaybg
     wofi
+    grim      # Screenshot tool
+    slurp     # Screen area selector
   ];
 
 

@@ -6,9 +6,9 @@
 }
 
 #window {
-    background-color: #282828;
-    color: #ebdbb2;
-    border: 2px solid #d65d0e;
+    background-color: #1a1b26;
+    color: #c0caf5;
+    border: 2px solid #7aa2f7;
     margin: 0px;
 }
 
@@ -32,11 +32,11 @@
     margin: 5px;
     padding-left: 5px;
     border: none;
-    color: #ebdbb2;
+    color: #c0caf5;
 }
 
 #entry:selected {
     background-color: transparent;
-    color: #d79921; 
+    color: #7aa2f7;
     font-weight: bold;
 }

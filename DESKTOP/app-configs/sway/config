@@ -76,3 +76,9 @@ bindsym $mod+Shift+4 move container to workspace $ws4
 bindsym $mod+Shift+f fullscreen toggle
 bindsym $mod+q kill
 bindsym $mod+r reload
+
+# Layout and splits
+bindsym $mod+v split vertical
+bindsym $mod+b split horizontal
+bindsym $mod+e layout toggle split
+bindsym $mod+space floating toggle
